@@ -1,0 +1,10 @@
+.chip_1{
+    width:auto;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+
+.chip_1:hover{
+    background-color:#F3F8FE ;
+    color:#176FF2;
+}
