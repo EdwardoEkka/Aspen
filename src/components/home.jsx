@@ -1,5 +1,7 @@
 import "./home.css";
+import {useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate=useNavigate();
   return (
     <div
       style={{
@@ -63,6 +65,7 @@ const Home = () => {
                   paddingRight: "44px",
                   width: "100%",
                 }}
+                onClick={()=>{navigate('/explore')}}
               >
                 Explore
               </button>

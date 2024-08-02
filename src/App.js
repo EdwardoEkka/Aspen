@@ -1,16 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Navbar from './components/navbar';
+import View from './components/view';
 import Home from './components/home';
 import Explore from './components/explore';
+import {BrowserRouter as Router,Route, Routes} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
-      {/* <Home/> */}
-      <Explore/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/explore" element={<Explore/>}/>
+          <Route path="/view" element={<View/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

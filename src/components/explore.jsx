@@ -1,6 +1,7 @@
 import Navbar from "./navbar";
 import Chip from "./chip";
 import VisitCard from "./Visit_card";
+import Visits from "../data/data";
 
 const Categories = [
   { id: 1, name: "Location" },
@@ -12,15 +13,7 @@ const Categories = [
   { id: 7, name: "Activities" },
 ];
 
-const Visits=[
-    { id: 1, name: "Eiffel",image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg",rating:"4.1" },
-    { id: 2, name: "Eiffel" ,image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg",rating:"4.1"},
-    { id: 3, name: "Eiffel" ,image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg",rating:"4.1"},
-    { id: 4, name: "Eiffel",image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg" ,rating:"4.1"},
-    { id: 5, name: "Eiffel",image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg" ,rating:"4.1"},
-    { id: 6, name: "Eiffel" ,image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg",rating:"4.1"},
-    { id: 7, name: "Eiffel" ,image:"https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-paris-france.jpg",rating:"4.1"},
-]
+
 
 const Explore = () => {
   return (

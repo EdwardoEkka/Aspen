@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const VisitCard = ({ data }) => {
+    const navigate=useNavigate();
     return (
         <div style={{  minWidth: "188px", 
-            height: "240px", position: "relative" }}>
+            height: "240px", position: "relative" }} onClick={()=>{navigate(`/view?id=${data.id}`)}}>
             <img 
                 src={data.image} 
                 alt={data.name} 
