@@ -37,7 +37,7 @@ const Home = () => {
               paddingRight: "36px",
             }}
           >
-            <div className="mb-3">
+            <div style={{margin:"24px"}}>
               <h2
                 style={{
                   fontSize: "24px",
@@ -50,7 +50,7 @@ const Home = () => {
               <h1 style={{ fontSize: "40px", margin: "0rem" }}>Luxurious</h1>
               <h1 style={{ fontSize: "40px", padding: "0" }}>Vacation</h1>
             </div>
-            <div>
+            <div style={{margin:"0px 24px"}}>
               <button
                 type="button"
                 aria-label="Explore our products"
@@ -59,10 +59,7 @@ const Home = () => {
                   backgroundColor: "#176FF2",
                   borderRadius: "16px",
                   border: "none",
-                  paddingTop: "18px",
-                  paddingBottom: "18px",
-                  paddingLeft: "44px",
-                  paddingRight: "44px",
+                  padding: "18px 44px",
                   width: "100%",
                 }}
                 onClick={()=>{navigate('/explore')}}

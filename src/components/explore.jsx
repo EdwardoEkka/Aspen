@@ -2,6 +2,8 @@ import Navbar from "./navbar";
 import Chip from "./chip";
 import VisitCard from "./Visit_card";
 import Visits from "../data/data";
+import './explore.css';
+import PlaceCard from "./Place_card";
 
 const Categories = [
   { id: 1, name: "Location" },
@@ -17,10 +19,10 @@ const Categories = [
 
 const Explore = () => {
   return (
-    <div style={{ margin: "20px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div style={{ margin: "20px"}} className="explore">
+      <div style={{ display: "flex", justifyContent: "space-between",margin:"0px"}}>
         <p>Explore</p>
-        <div style={{ display: "flex", gap: "6px" }}>
+        <div style={{ display: "flex", gap: "6px",alignItems:"center"}}>
           <span>
             <img width="16" src="./icons/location-1.png" alt="location-1" />
           </span>
@@ -33,7 +35,7 @@ const Explore = () => {
         </div>
       </div>
       <div>
-        <h1 style={{ fontSize: "32px", marginBottom: "48px" }}>Aspen</h1>
+        <h1 style={{ fontSize: "32px", marginBottom: "25px" }}>Aspen</h1>
       </div>
       <div
         style={{
@@ -46,7 +48,7 @@ const Explore = () => {
           paddingBottom: "16px",
           backgroundColor: "#F3F8FE",
           borderRadius: "32px",
-          marginBottom: "48px",
+          marginBottom: "25px",
         }}
       >
         <div style={{ marginRight: "8px" }}>
@@ -72,24 +74,41 @@ const Explore = () => {
           overflowX: "scroll",
           scrollbarWidth: "none",
           gap: "28px",
+          marginBottom:"36px"
         }}
       >
         {Categories.map((category) => (
           <Chip category={category.name} />
         ))}
       </div>
+      <div style={{marginBottom:"36px"}}>
+      <h1 style={{fontSize:"18px",marginBottom:"15px"}}>Popular</h1>
       <div style={{
             display: "flex",
             overflowX: "scroll",
             scrollbarWidth: "none", 
             WebkitOverflowScrolling: "touch",
             gap: "28px",
-            padding: "10px"
         }}>
             {Visits.map((card) => (
                 <VisitCard key={card.id} data={card} />
             ))}
         </div>
+      </div>
+      <div style={{marginBottom:"70px"}}>
+        <h1 style={{fontSize:"18px"}}>Recommended</h1>
+        <div style={{
+            display: "flex",
+            overflowX: "scroll",
+            scrollbarWidth: "none", 
+            WebkitOverflowScrolling: "touch",
+            gap: "28px",
+        }}>
+            {Visits.map((card) => (
+                <PlaceCard key={card.id} data={card} />
+            ))}
+        </div>
+      </div>
       <Navbar />
     </div>
   );

@@ -1,0 +1,15 @@
+.view{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

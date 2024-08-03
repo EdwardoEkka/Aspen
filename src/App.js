@@ -1,6 +1,4 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import View from './components/view';
 import Home from './components/home';
 import Explore from './components/explore';
