@@ -27,7 +27,7 @@ const PlaceCard = ({ data }) => {
       <div
         style={{
           position: "absolute",
-          bottom: "20px",
+          bottom: "25px",
           right: "15px",
           backgroundColor: "white",
           borderRadius: "59px",

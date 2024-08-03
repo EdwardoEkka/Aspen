@@ -27,17 +27,16 @@ const Home = () => {
         <div style={{ position: "absolute", top: "93px", color: "white" }}>
             <h1 className="main-head">Aspen</h1>
         </div>
-        <div style={{ position: "absolute", bottom: "48px", color: "white" }}>
+        <div style={{ position: "absolute", bottom: "48px", color: "white",  width: "100%",}}>
           <div
             style={{
-              width: "100vw",
               display: "flex",
               flexDirection: "column",
               paddingLeft: "36px",
               paddingRight: "36px",
             }}
           >
-            <div style={{margin:"24px"}}>
+            <div>
               <h2
                 style={{
                   fontSize: "24px",
@@ -50,7 +49,7 @@ const Home = () => {
               <h1 style={{ fontSize: "40px", margin: "0rem" }}>Luxurious</h1>
               <h1 style={{ fontSize: "40px", padding: "0" }}>Vacation</h1>
             </div>
-            <div style={{margin:"0px 24px"}}>
+            <div>
               <button
                 type="button"
                 aria-label="Explore our products"

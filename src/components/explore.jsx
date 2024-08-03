@@ -19,7 +19,7 @@ const Categories = [
 
 const Explore = () => {
   return (
-    <div style={{ margin: "20px"}} className="explore">
+    <div  className="explore" style={{margin:"20px"}}>
       <div style={{ display: "flex", justifyContent: "space-between",margin:"0px"}}>
         <p>Explore</p>
         <div style={{ display: "flex", gap: "6px",alignItems:"center"}}>
@@ -39,7 +39,6 @@ const Explore = () => {
       </div>
       <div
         style={{
-          width: "100%",
           paddingLeft: "16px",
           display: "flex",
           justifyContent: "start",
